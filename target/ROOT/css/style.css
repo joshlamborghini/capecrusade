@@ -39,17 +39,17 @@ body {
 }
 
 #logo {
-	background-image: url(../img/logo.png);
+	background-image: url(../img/cclogo.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 130px; 
-	height: 150px;
+	width: 577px; 
+	height: 370px;
 	margin: 0 auto;
 }
 
 #logomini {
 	float: left;
-	background-image: url(../img/logo.png);
+	background-image: url(../img/logo.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 30px;
