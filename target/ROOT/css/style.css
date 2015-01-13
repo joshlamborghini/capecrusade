@@ -40,12 +40,20 @@ body {
 }
 
 #logo {
-	background-image: url(../img/cclogo.png);
+	background-image: url("../img/cclogo.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 577px; 
-	height: 370px;
-	margin: 0 auto;
+	width: 500px;
+	height: 320px; 
+	margin: 0 auto;	
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        width: 100px;
+		height: 64px; 
+    }
+}
 }
 
 #logomini {
@@ -99,7 +107,8 @@ h1 {
 	color: #6A8BA7;
 	font-size: 20px;	
 	font-weight: normal;
-}
+	
+
 
 /*bootstrap mods*//*bootstrap mods*/
 /*bootstrap mods*//*bootstrap mods*/
@@ -116,8 +125,6 @@ h1 {
   margin-right: 0;
   margin-left: 0;
 }
-
-
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 color: #FFD59B;
@@ -147,6 +154,13 @@ margin-left: auto;
     padding:0; 
        
   }
+}
+
+@media (min-width: 600px) {
+	.logo {
+	width:200px;
+	height:128px
+	}
 }
 
 .navbar-brand {
