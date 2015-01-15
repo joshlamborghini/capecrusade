@@ -1,0 +1,195 @@
+@CHARSET "ISO-8859-1";
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+html {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  background-color: none;
+  background: -webkit-radial-gradient(circle, #416A8C 10%, #2A4F6E 15%); /* Safari */
+  background: -o-radial-gradient(circle, #416A8C, #2A4F6E); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, #416A8C, #2A4F6E); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, #416A8C, #2A4F6E); /* Standard syntax */
+  margin:0;
+  font-family: Lato;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+@media (max-width: 768px) {
+	body {
+		background-color: #416A8C;
+		background: -webkit-radial-gradient(circle, #416A8C 10%, #416A8C 15%); /* Safari */
+		background: -o-radial-gradient(circle, #416A8C, #416A8C); /* Opera 11.6 to 12.0 */
+		background: -moz-radial-gradient(circle, #416A8C, #416A8C); /* Firefox 3.6 to 15 */
+		background: radial-gradient(circle, #416A8C, #416A8C); /* Standard syntax */
+	}
+}
+
+#bodycontainer {
+	min-height: 100%;
+    min-width: 100%;
+}
+
+#linkcontainer{
+	margin: 0 auto;
+	display: block;
+	width: auto;
+	text-align: center;
+	padding:30px 0; 
+}
+
+#dates {
+	font-family: Lato;
+	font-weight: normal;
+	font-size: 16px;
+	font-weight:bold;
+	text-align:center;
+	color: #FFD59B;
+	margin: 0 auto;
+	padding:20px;	 
+}
+
+.logo {
+	width: 75%;
+	height: auto;
+	max-width:400px;
+	display:block;
+	margin:auto;	
+}
+
+@media (max-width: 768px) {
+	.logo {
+	width:100%;
+	height:auto;
+	}
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+	border: 0;
+	width: 300px;
+	height: 168px;
+}
+
+@media (max-width: 768px) {
+	iframe {
+	width:100%;
+	height:auto;
+	max-width: 300px;
+	}
+}
+
+#logomini {
+	float: left;
+	background-image: url(../img/logo.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+}
+
+#title {
+	font-family: Lato;
+	font-weight: normal;
+	font-size: 20px;
+	font-weight:bold;
+	text-align:center;
+	color: #FFD59B;
+	margin: 0 auto;
+	padding:20px;	 
+}
+
+#contentcontainer {
+	display:table;
+	height: 100%;
+	width: 90%;
+	margin: 0 auto;
+	color:black;
+	line-height: 20px;
+}
+
+@media (max-width: 768px) {
+	#contentcontainer {
+	width:100%;
+	height:100%;
+	}
+}
+
+
+
+h1 {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+}
+
+#content {
+	color: #6A8BA7;
+	font-size: 20px;	
+	font-weight: normal;
+}
+
+
+/*bootstrap mods*//*bootstrap mods*/
+/*bootstrap mods*//*bootstrap mods*/
+/*bootstrap mods*//*bootstrap mods*/
+/*bootstrap mods*//*bootstrap mods*/
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  float:none;
+  background: none;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom:0;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: #FFD59B;
+background-color:transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+color: #FFD59B;
+}
+
+.container {
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container > .navbar-header,
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
+    
+    display:table;    
+    width: 451px;
+    margin: 0 auto;
+    padding:0; 
+       
+  }
+}
+
+.navbar-brand {
+    position: absolute;
+}
+
+
