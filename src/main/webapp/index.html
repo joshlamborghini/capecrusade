@@ -11,11 +11,13 @@
   <link href="css/custom.css" rel="stylesheet">
 
   <!-- Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,500,600' rel='stylesheet' type='text/css'>
 
   <!-- Scripts -->
   <script src="js/third-party/angular/angular.min.js"></script>
   <script src="js/third-party/ui-bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+  <script src="js/third-party/jquery/jquery-2.1.3.min.js"></script>
+  <script src="js/third-party/bootstrap/bootstrap.min.js"></script>
   <script src="js/angular-crusade.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -25,38 +27,47 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="container">
-<div ng-controller="CrusadeCtrl">
-    <div class="row">
-      <div class="col-lg-4"><h1>Cape Crusade <small>Relay Race</small></h1></div>
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4"><h4>
-        <p class="label label-info">May 30th & 31st</p>
-        <p class="label label-info">June 6th & 7h</p>
-      </h4></div>
+<body ng-controller="CrusadeCtrl" class="crusade">
+  <div class="container">
+    <div style="margin-top: 10px" class="text-center"><img width="250" ng-src="img/cclogo.png"></div>
+    <nav style="margin-top: 10px" class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index.html"><img ng-src="{{data.images.shield.small}}"/></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav" ng-repeat="link in data.links">
+            <li ng-class="isSelected(link)">
+              <a class="btn btn-default btn-lg" href="{{link.url}}" role="button">{{link.name}}</a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div ng-controller="CarouselCtrl">
+      <carousel>
+        <slide ng-repeat="video in data.videos" active="video.active">
+          <iframe class="video" ng-src="{{video.url}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </slide>
+      </carousel>
     </div>
-    <div class="container text-center">
-      <iframe class="video" src="//player.vimeo.com/video/53171530?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <br>
+    <div class="gray-container">
+      <div class="text-center">
+        <div class="header"><em>Cape Cod’s Premiere Charity Kiteboarding Race</em></div>
+        <div class="header"><em>26 miles. # Teams. Saving Lives.</em></div>
+        <div class="header"><em>Capes for Cancer</em></div>
+      </div>
     </div>
   </div>
-  <br>
-  <div class="panel panel-info">
-    <div class="panel-heading"><span class="">The Cape Crusade relay race</span></div>
-    <div class="panel-body">
-      <p>
-        <ul style="font-size: 20px;">
-          <li>
-            <span class="glyphicon glyphicon-pushpin text-primary icon"></span>
-            <span class="note">Taking place this spring in <em>[town]</em>, and bringing together 150 kiteboarders to support the work of <a href="http://www.athletes4cancer.org/">Athletes 4 Cancer</a>.</span>
-          </li>
-          <li>
-            <span class="glyphicon glyphicon-pushpin text-primary icon"></span>
-            <span class="note">Started in 2007, <a href="http://www.athletes4cancer.org/">Athletes 4 Cancer</a> focuses on empowering adults who have survived their battle with Cancer.</span>
-          </li>
-        </ul>
-      </p>
-    </div>
-  </div>
-</div>
+
 </body>
 </html>

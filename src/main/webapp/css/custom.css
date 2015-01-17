@@ -1,51 +1,98 @@
 @media screen and (min-width: 640px) {
-    .video {
-        width: 360px;
-        height: 203px;
-    }
+  .video {
+    width: 360px;
+    height: 203px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .video {
-        width: 500px;
-        height: 281px;
-    }
+  .video {
+    width: 500px;
+    height: 281px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .video {
-        width: 640px;
-        height: 360px;
-    }
+  .video {
+    width: 640px;
+    height: 360px;
+  }
+}
+
+html {
+  background: url("/img/beach.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-    /*background-image: url("/img/vertical_cloth.png");*/
-    font-family: Lato;
-    background-color: #416A8C;
-    background: -webkit-radial-gradient(circle, #416A8C 10%, #416A8C 15%); /* Safari */
-    background: -o-radial-gradient(circle, #416A8C, #416A8C); /* Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(circle, #416A8C, #416A8C); /* Firefox 3.6 to 15 */
-    background: radial-gradient(circle, #416A8C, #416A8C); /* Standard syntax */
+  background-color: transparent;
+  font-family: Lato;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 li {
-    margin: 5px;
+  margin: 5px;
+}
+
+.crusade .navbar-default {
+  background-color:rgba(0,0,0,0.4);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+.crusade .navbar-brand {
+  padding: 10px 20px;
+}
+
+.crusade .navbar-default .navbar-nav > li > a {
+  color: #000000;
+}
+
+.crusade .navbar-default .navbar-nav > li > a:hover {
+  color: #ffffff;
+}
+
+.crusade .gray-container {
+  background-color:rgba(0,0,0,0.4);
+  color: #ffffff;
+}
+
+.crusade .gray-container .header {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.crusade .btn {
+  border: 0px;
+}
+
+.navigation {
+  padding: 5px 10px;
+  background-color: #000000;
+  opacity: .5;
+  width: 100%;
+}
+
+.navigation .row {
+  opacity: .6;
 }
 
 .note {
-    line-height: 1.5;
-    margin: 5px;
+  line-height: 1.5;
+  margin: 5px;
 }
 
 .label {
-    padding: 0.2em 0.6em 0.3em;
+  padding: 0.2em 0.6em 0.3em;
 }
 
 .icon {
-    margin-right: 5px;
+  margin-right: 5px;
 }
