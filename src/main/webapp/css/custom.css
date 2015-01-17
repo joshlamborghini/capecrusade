@@ -104,17 +104,25 @@ li {
   background-color:rgba(91,192,222,0.3);
 }
 
-.people {
-  background-color:rgba(0,0,0,0.2);
+.whitewash {
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 6px;
   color: #28506f;
 }
 
 .people .people-content {
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 6px;
+  margin-bottom: 10px;
 }
 
 .people .people-content .image-text {
+  background-color:rgba(91,192,222,0.5);
   margin: 5px 5px 0px 10px;
-  font-size: 16px;
+  padding: 5px;
+  color: #28506f;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.featurette {
+  padding: 20px;
 }

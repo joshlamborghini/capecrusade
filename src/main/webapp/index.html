@@ -49,6 +49,9 @@
               <a class="btn btn-info btn-lg" href="{{link.url}}" role="button">{{link.name}}</a>
             </li>
           </ul>
+          <ul class="pull-right" ng-repeat="date in data.eventDates">
+            <h3><li class="label label-info">{{date}}</li></h3>
+          </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
@@ -60,19 +63,62 @@
       </carousel>
     </div>
     <br>
-    <div class="people text-center">
+    <div class="whitewash people text-center">
+      <br>
       <div class="row">
         <div ng-repeat="image in data.images.people" class="col-lg-4">
-          <img class="img-rounded" ng-src="{{image.url}}" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <img class="img-circle" ng-src="{{image.url}}" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <div class="people-content">
             <h2>{{image.heading}}</h2>
             <div ng-repeat="text in image.texts">
-              <p class="image-text">{{text}}</p>
+              <div class="image-text">{{text}}</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <br><br>
+  <div class="whitewash">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      </div>
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+  </div>
+
+
+
+</div>
 </body>
 </html>

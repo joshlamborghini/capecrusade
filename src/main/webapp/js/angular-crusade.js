@@ -15,29 +15,29 @@ app.controller('CrusadeCtrl', ['$scope', '$sce', function($scope, $sce) {
       },
      people: [
        {
-         heading: 'Alive',
+         heading: 'Purpose',
          url: '/img/person2.jpg',
          texts: [
-           'Cape Cod’s Premiere Charity Kiteboarding Race',
-           '26 miles. # Teams. Saving Lives.',
-           'Capes for Cancer'
+            'The Cape Crusade endeavors to support the amazing work that Athlete\'s 4 Cancer started back in 2007.'
          ]
        },
        {
-         heading: 'Empowering',
+         heading: '26 miles. # Teams',
          url: '/img/person1.jpg',
          texts: [
-           'Taking place on the beautiful Cape Cod at Smuggler’s Beach in South Yarmouth, Massachussets. Come enjoy an event full of fun, family, adrenaline, racing, and memories!'
+           'Taking place on the beautiful Cape Cod at Smuggler’s Beach in South Yarmouth, Massachussets.'
          ]
        },
        {
-         heading: 'Smile',
+         heading: 'Capes for Cancer',
          url: '/img/person3.jpg',
-         texts: ''
+         texts: [
+           'Come enjoy an event full of fun, family, adrenaline, racing, and memories!'
+           ]
        }
      ]
     },
-    dates: [
+    eventDates: [
       "May 30th & 31st",
       "June 6th & 7th"
     ],
