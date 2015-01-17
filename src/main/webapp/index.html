@@ -7,11 +7,11 @@
   <title>The Cape Crusade</title>
 
   <!-- Styles -->
-  <link href="css/third-party/bootstrap.min.css" rel="stylesheet">
+  <link href="css/third-party/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
 
   <!-- Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,500,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,500,700' rel='stylesheet' type='text/css'>
 
   <!-- Scripts -->
   <script src="js/third-party/angular/angular.min.js"></script>
@@ -27,8 +27,8 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body ng-controller="CrusadeCtrl" class="crusade">
-  <div class="container">
+<body ng-controller="CrusadeCtrl" >
+  <div class="navigation container">
     <div style="margin-top: 10px" class="text-center"><img width="250" ng-src="img/cclogo.png"></div>
     <nav style="margin-top: 10px" class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
@@ -40,13 +40,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/index.html"><img ng-src="{{data.images.shield.small}}"/></a>
+          <span class="btn btn-info btn-lg" href="/index.html"><img ng-src="{{data.images.shield.small}}"/></span>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav" ng-repeat="link in data.links">
-            <li ng-class="isSelected(link)">
-              <a class="btn btn-default btn-lg" href="{{link.url}}" role="button">{{link.name}}</a>
+            <li ng-class="{active: isSelected(link)}">
+              <a class="btn btn-info btn-lg" href="{{link.url}}" role="button">{{link.name}}</a>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -60,14 +60,19 @@
       </carousel>
     </div>
     <br>
-    <div class="gray-container">
-      <div class="text-center">
-        <div class="header"><em>Cape Cod’s Premiere Charity Kiteboarding Race</em></div>
-        <div class="header"><em>26 miles. # Teams. Saving Lives.</em></div>
-        <div class="header"><em>Capes for Cancer</em></div>
+    <div class="people text-center">
+      <div class="row">
+        <div ng-repeat="image in data.images.people" class="col-lg-4">
+          <img class="img-rounded" ng-src="{{image.url}}" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+          <div class="people-content">
+            <h2>{{image.heading}}</h2>
+            <div ng-repeat="text in image.texts">
+              <p class="image-text">{{text}}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
 </body>
 </html>

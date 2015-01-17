@@ -5,6 +5,32 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .navigation .navbar-default .navbar-header .btn-lg {
+    background-color:rgba(0,0,0,0.0);
+  }
+  .navigation .navbar-default .navbar-header .btn-lg {
+    border: 1px solid transparent;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .video {
+    width: 360px;
+    height: 203px;
+  }
+  .navigation .navbar-default .navbar-header .btn-lg {
+    margin-top: 1px;
+    margin-right: 10px;
+    border: 1px solid transparent;
+  }
+  .navigation .navbar-default .navbar-header .btn-lg:hover {
+    margin-top: 1px;
+    margin-right: 10px;
+    border: 1px solid #daa520;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .video {
     width: 500px;
@@ -40,59 +66,55 @@ li {
   margin: 5px;
 }
 
-.crusade .navbar-default {
-  background-color:rgba(0,0,0,0.4);
+.navigation .navbar-default {
+  background-color:rgba(0,0,0,0.3);
   color: #ffffff;
   border-color: transparent;
 }
 
-.crusade .navbar-brand {
-  padding: 10px 20px;
+.navigation .navbar-default .navbar-toggle {
+  background-color:rgba(91,192,222,0.3);
+  border: 1px solid transparent;
 }
 
-.crusade .navbar-default .navbar-nav > li > a {
-  color: #000000;
+.navigation .navbar-default .navbar-collapse {
+  border-color: #daa520;
 }
 
-.crusade .navbar-default .navbar-nav > li > a:hover {
-  color: #ffffff;
+.navigation .navbar-default .navbar-toggle:hover {
+  border: 1px solid #daa520;
 }
 
-.crusade .gray-container {
-  background-color:rgba(0,0,0,0.4);
-  color: #ffffff;
+.navigation .navbar-default .navbar-toggle .icon-bar {
+  border: 1px solid #daa520;
 }
 
-.crusade .gray-container .header {
-  display: block;
-  font-size: 24px;
-  font-weight: 300;
+.navigation .navbar-default .navbar-nav > li > a {
+  color: #28506f;
+  font-weight: 600;
+  border: 1px solid transparent;
 }
 
-.crusade .btn {
-  border: 0px;
+.navigation .navbar-default .navbar-nav > li > a:hover {
+  color: #daa520;
+  border: 1px solid #daa520;
 }
 
-.navigation {
-  padding: 5px 10px;
-  background-color: #000000;
-  opacity: .5;
-  width: 100%;
+.navigation .navbar-default .btn-info {
+  background-color:rgba(91,192,222,0.3);
 }
 
-.navigation .row {
-  opacity: .6;
+.people {
+  background-color:rgba(0,0,0,0.2);
+  color: #28506f;
 }
 
-.note {
-  line-height: 1.5;
-  margin: 5px;
+.people .people-content {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 6px;
 }
 
-.label {
-  padding: 0.2em 0.6em 0.3em;
-}
-
-.icon {
-  margin-right: 5px;
+.people .people-content .image-text {
+  margin: 5px 5px 0px 10px;
+  font-size: 16px;
 }
