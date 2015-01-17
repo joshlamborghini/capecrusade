@@ -20,12 +20,12 @@
     height: 203px;
   }
   .navigation .navbar-default .navbar-header .btn-lg {
-    margin-top: 1px;
+    margin-top: 3px;
     margin-right: 10px;
     border: 1px solid transparent;
   }
   .navigation .navbar-default .navbar-header .btn-lg:hover {
-    margin-top: 1px;
+    margin-top: 3px;
     margin-right: 10px;
     border: 1px solid #daa520;
   }
@@ -115,7 +115,7 @@ li {
 }
 
 .people .people-content .image-text {
-  background-color:rgba(91,192,222,0.5);
+  background-color:rgba(91,192,222,0.6);
   margin: 5px 5px 0px 10px;
   padding: 5px;
   color: #28506f;
@@ -125,4 +125,14 @@ li {
 
 .featurette {
   padding: 20px;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right {
+  background-color:rgba(255,255,255,.7);
+  border-radius: 4px;
+  color: #daa520;
 }

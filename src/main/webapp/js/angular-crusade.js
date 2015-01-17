@@ -38,8 +38,8 @@ app.controller('CrusadeCtrl', ['$scope', '$sce', function($scope, $sce) {
      ]
     },
     eventDates: [
-      "May 30th & 31st",
-      "June 6th & 7th"
+      "June 6th & 7th",
+      "May 30th & 31st"
     ],
     videos: [
       {
