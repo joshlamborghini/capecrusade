@@ -1,3 +1,10 @@
-/**
- * Created by Mike on 1/15/2015.
- */
+var app = angular.module('capeCrusade', ['ui.bootstrap']);
+
+app.controller('CrusadeCtrl', ['$scope', function($scope) {
+
+  $scope.tabs = [
+    { title:'Dynamic Title 1', content:'Dynamic content 1' },
+    { title:'Dynamic Title 2', content:'Dynamic content 2', disabled: true }
+  ];
+
+}]);

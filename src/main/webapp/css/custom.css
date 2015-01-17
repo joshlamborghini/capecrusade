@@ -1,0 +1,51 @@
+@media screen and (min-width: 640px) {
+    .video {
+        width: 360px;
+        height: 203px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .video {
+        width: 500px;
+        height: 281px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .video {
+        width: 640px;
+        height: 360px;
+    }
+}
+
+body {
+    /*background-image: url("/img/vertical_cloth.png");*/
+    font-family: Lato;
+    background-color: #416A8C;
+    background: -webkit-radial-gradient(circle, #416A8C 10%, #416A8C 15%); /* Safari */
+    background: -o-radial-gradient(circle, #416A8C, #416A8C); /* Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle, #416A8C, #416A8C); /* Firefox 3.6 to 15 */
+    background: radial-gradient(circle, #416A8C, #416A8C); /* Standard syntax */
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 5px;
+}
+
+.note {
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.label {
+    padding: 0.2em 0.6em 0.3em;
+}
+
+.icon {
+    margin-right: 5px;
+}

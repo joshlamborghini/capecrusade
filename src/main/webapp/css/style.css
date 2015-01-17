@@ -7,12 +7,8 @@ html {
 }
 
 body {
-  background-color: none;
-  background: -webkit-radial-gradient(circle, #416A8C 10%, #2A4F6E 15%); /* Safari */
-  background: -o-radial-gradient(circle, #416A8C, #2A4F6E); /* Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(circle, #416A8C, #2A4F6E); /* Firefox 3.6 to 15 */
-  background: radial-gradient(circle, #416A8C, #2A4F6E); /* Standard syntax */
-  margin:0;
+  background-image: url("/img/paper.png");;
+  color: #cccccc;
   font-family: Lato;
   min-height: 100%;
   min-width: 100%;
