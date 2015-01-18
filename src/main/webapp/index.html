@@ -27,8 +27,8 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body ng-controller="CrusadeCtrl" >
-  <div class="navigation container">
+<body ng-controller="CrusadeCtrl" class="container">
+  <div class="navigation">
     <div style="margin-top: 10px" class="text-center"><img width="250" ng-src="img/cclogo.png"></div>
     <nav style="margin-top: 10px" class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
@@ -55,6 +55,7 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+    </div>
     <div ng-controller="CarouselCtrl">
       <carousel>
         <slide ng-repeat="video in data.videos" active="video.active">
@@ -80,45 +81,29 @@
   </div>
   <br><br>
   <div class="whitewash">
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    <div ng-repeat="featurette in data.featurettes">
+      <div class="row featurette">
+        <div ng-if="!featurette.imageOnTop" class="col-md-7">
+          <h2 class="featurette-heading">{{featurette.header}} <span class="text-muted">{{featurette.subheader}}</span></h2>
+          <p class="lead">
+            {{featurette.text}}
+          </p>
+        </div>
+        <div ng-if="featurette.imageOnTop" class="col-md-5">
+          <img class="featurette-image img-responsive" ng-src="{{featurette.image}}" alt="image">
+        </div>
+        <div ng-if="!featurette.imageOnTop" class="col-md-5">
+          <img class="featurette-image img-responsive" ng-src="{{featurette.image}}" alt="image">
+        </div>
+        <div ng-if="featurette.imageOnTop" class="col-md-7">
+          <h2 class="featurette-heading">{{featurette.header}} <span class="text-muted">{{featurette.subheader}}</span></h2>
+          <p class="lead">
+            {{featurette.text}}
+          </p>
+        </div>
       </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-      </div>
+      <hr class="featurette-divider">
     </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-      </div>
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
   </div>
-
-
-
-</div>
 </body>
 </html>
