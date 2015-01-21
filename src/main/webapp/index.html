@@ -29,8 +29,9 @@
 </head>
 <body ng-controller="CrusadeCtrl" class="container">
   <div class="navigation">
-    <div style="margin-top: 10px" class="text-center"><img width="250" ng-src="img/cclogo.png"></div>
+    <div style="margin-top: 10px" class="text-center"><img width="400" ng-src="img/logo.png"></div>
     <nav style="margin-top: 10px" class="navbar navbar-default" role="navigation">
+      <div class="container2">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -40,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <span class="btn btn-info btn-lg" href="/index.html"><img ng-src="{{data.images.shield.small}}"/></span>
+          <!-- <span class="btn btn-info btn-lg" href="/index.html"><img ng-src="{{data.images.shield.small}}"/></span> -->
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -49,13 +50,15 @@
               <a class="btn btn-info btn-lg" href="{{link.url}}" role="button">{{link.name}}</a>
             </li>
           </ul>
-          <ul class="pull-right" ng-repeat="date in data.eventDates">
+          <!-- <ul class="pull-right" ng-repeat="date in data.eventDates">
             <h3><li class="label label-info">{{date}}</li></h3>
-          </ul>
+          </ul> -->
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
+      </div>
     </nav>
     </div>
+<div class="container2">
     <div ng-controller="CarouselCtrl">
       <carousel>
         <slide ng-repeat="video in data.videos" active="video.active">
@@ -104,6 +107,7 @@
       </div>
       <hr class="featurette-divider">
     </div>
+  </div>
   </div>
 </body>
 </html>

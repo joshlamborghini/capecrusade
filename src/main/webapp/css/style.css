@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-image: url("/img/paper.png");;
+  background-image: background: url("../img/beach.jpg") no-repeat center center fixed;
   color: #cccccc;
   font-family: Lato;
   min-height: 100%;

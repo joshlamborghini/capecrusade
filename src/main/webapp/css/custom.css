@@ -27,7 +27,7 @@
   .navigation .navbar-default .navbar-header .btn-lg:hover {
     margin-top: 3px;
     margin-right: 10px;
-    border: 1px solid #daa520;
+    border: 1px solid transparent;
   }
 }
 
@@ -67,7 +67,8 @@ li {
 }
 
 .navigation .navbar-default {
-  background-color:rgba(0,0,0,0.3);
+  background-color:rgba(0,0,0,0.8);
+  /*background-color: rgba(255, 255, 255, .6);*/
   color: #ffffff;
   border-color: transparent;
 }
@@ -78,15 +79,15 @@ li {
 }
 
 .navigation .navbar-default .navbar-collapse {
-  border-color: #daa520;
+  border-color: #47B4E5;
 }
 
 .navigation .navbar-default .navbar-toggle:hover {
-  border: 1px solid #daa520;
+  border: 1px solid transparent;
 }
 
 .navigation .navbar-default .navbar-toggle .icon-bar {
-  border: 1px solid #daa520;
+  border: 1px solid transparent;
 }
 
 .navigation .navbar-default .navbar-nav > li > a {
@@ -96,19 +97,10 @@ li {
 }
 
 .navigation .navbar-default .navbar-nav > li > a:hover {
-  color: #daa520;
-  border: 1px solid #daa520;
+  color: #47B4E5;
+  border: 1px solid transparent;
 }
 
-.navigation .navbar-default .btn-info {
-  background-color:rgba(91,192,222,0.3);
-}
-
-.whitewash {
-  background-color: rgba(255, 255, 255, .5);
-  border-radius: 6px;
-  color: #28506f;
-}
 
 .people .people-content {
   margin-bottom: 10px;
@@ -134,5 +126,75 @@ li {
 .glyphicon-chevron-left, .glyphicon-chevron-right {
   background-color:rgba(255,255,255,.7);
   border-radius: 4px;
-  color: #daa520;
+  color: #47B4E5;
 }
+
+.whitewash {
+  background-color: rgba(0, 0, 0, .8);
+  border-radius: 6px;
+  color: #F3EFF5;
+  font-size: 20px;
+}
+
+.container2 {
+	width:750px;
+	margin: auto;
+}
+
+.container {
+	width:100%;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navigation .navbar-default .btn-info {
+	background-color: transparent;
+}
+
+.navigation .navbar-default .navbar-nav > li > a {
+	color: #F3EFF5;
+}
+
+.people .people-content .image-text {
+background-color: rgba(91,192,222,0.3);
+margin: 5px 5px 0px 10px;
+padding: 5px;
+color: #F3EFF5;
+font-size: 18px;
+border-radius: 6px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-family: inherit;
+font-weight: 500;
+line-height: 1.1;
+color: #F3EFF5;
+}
+
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*.carousel-inner {
+	background-color: rgba(0, 0, 0, .6);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}*/
+
+body2 {
+background-image: background: url("../img/beach.jpg") no-repeat center center fixed;
+color: black;
+font-family: Lato;
+min-height: 100%;
+min-width: 100%;
+}
+
+
