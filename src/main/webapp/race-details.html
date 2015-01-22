@@ -8,7 +8,6 @@
 
   <!-- Styles -->
   <link href="css/third-party/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <link href="css/third-party/bootstrap/stick-footer-navbar.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
 
   <!-- Fonts -->
@@ -56,61 +55,22 @@
       </div><!-- /.container-fluid -->
     </nav>
     </div>
-    <div ng-controller="CarouselCtrl">
-      <carousel>
-        <slide ng-repeat="video in data.videos" active="video.active">
-          <iframe class="video" ng-src="{{video.url}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </slide>
-      </carousel>
-    </div>
-    <br>
-    <div class="blackwash people text-center">
-      <br>
-      <div class="row">
-        <div ng-repeat="image in data.images.people" class="col-lg-4">
-          <img class="img-circle" ng-src="{{image.url}}" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <div class="people-content">
-            <h2>{{image.heading}}</h2>
-            <div ng-repeat="text in image.texts">
-              <div class="image-text">{{text}}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br>
+    <div class="blackwash page-header text-center">
+  		<h1>Race Details</h1>
+	</div>
   <div class="blackwash">
-    <div ng-repeat="featurette in data.featurettes">
-      <div class="row featurette">
-        <div ng-if="!featurette.imageOnTop" class="col-md-7">
-          <h2 class="featurette-heading">{{featurette.header}} <span class="text-muted">{{featurette.subheader}}</span></h2>
-          <p class="lead">
-            {{featurette.text}}
-          </p>
-        </div>
-        <div ng-if="featurette.imageOnTop" class="col-md-5">
-          <img class="featurette-image img-responsive" ng-src="{{featurette.image}}" alt="image">
-        </div>
-        <div ng-if="!featurette.imageOnTop" class="col-md-5">
-          <img class="featurette-image img-responsive" ng-src="{{featurette.image}}" alt="image">
-        </div>
-        <div ng-if="featurette.imageOnTop" class="col-md-7">
-          <h2 class="featurette-heading">{{featurette.header}} <span class="text-muted">{{featurette.subheader}}</span></h2>
-          <p class="lead">
-            {{featurette.text}}
-          </p>
-        </div>
-      </div>
-      <hr class="featurette-divider">
-    </div>
+Format:  The course will be simple and a detailed map is soon to come.  Each lap of the course will be approx. 2.5 miles and will be completed a total of 10 times in relay fashion to finish. 
+<p>
+<p>
+Boat Support: There will be boat support on the course.  Should you require assistance simply wave your arms in the air until the support boat acknowledges it has seen you.  
+<p>
+<p>
+Safety:  Please keep safety in mind at all times!  This race is meant to be fun!  Abide by Right of Way rules, always respect race volunteers and support staff, and avoid crossing lines at all costs.
+<p>
+Right of Way:  Co1t1mplete rules will be emailed to all registered racers. For an easy guide to right's of way, you can go to, http://www.mauikiteboardingassociation.com/kiteboarding_right-of-way_rules.html
+
+  	<br>
+  	
   </div>
-  
-   <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-      </div>
-    </footer>
-  
 </body>
 </html>

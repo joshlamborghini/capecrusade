@@ -24,11 +24,11 @@
     margin-right: 10px;
     border: 1px solid transparent;
   }
-  .navigation .navbar-default .navbar-header .btn-lg:hover {
-    margin-top: 3px;
-    margin-right: 10px;
-    border: 1px solid #daa520;
-  }
+/*   .navigation .navbar-default .navbar-header .btn-lg:hover { */
+/*     margin-top: 3px; */
+/*     margin-right: 10px; */
+/*     border: 1px solid #daa520; */
+/*   } */
 }
 
 @media screen and (min-width: 1024px) {
@@ -58,10 +58,6 @@ body {
   font-family: Lato;
 }
 
-ul {
-  list-style-type: none;
-}
-
 li {
   margin: 5px;
 }
@@ -81,9 +77,9 @@ li {
   border-color: #daa520;
 }
 
-.navigation .navbar-default .navbar-toggle:hover {
-  border: 1px solid #daa520;
-}
+/* .navigation .navbar-default .navbar-toggle:hover { */
+/*   border: 1px solid #daa520; */
+/* } */
 
 .navigation .navbar-default .navbar-toggle .icon-bar {
   border: 1px solid #daa520;
@@ -95,36 +91,60 @@ li {
   border: 1px solid transparent;
 }
 
-.navigation .navbar-default .navbar-nav > li > a:hover {
-  color: #daa520;
-  border: 1px solid #daa520;
-}
+/* .navigation .navbar-default .navbar-nav > li > a:hover { */
+/*   color: #daa520; */
+/*   border: 1px solid #daa520; */
+/* } */
 
 .navigation .navbar-default .btn-info {
   background-color:rgba(91,192,222,0.3);
 }
 
-.whitewash {
-  background-color: rgba(255, 255, 255, .5);
+.blackwash {
+  background-color: rgba(0, 0, 0, .7);
   border-radius: 6px;
-  color: #28506f;
+  color: #ffffff;
 }
 
-.people .people-content {
+.people {
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.people .icon-lg {
+  font-size: 100px;
+}
+
+.people-content {
   margin-bottom: 10px;
 }
 
 .people .people-content .image-text {
-  background-color:rgba(91,192,222,0.6);
   margin: 5px 5px 0px 10px;
   padding: 5px;
-  color: #28506f;
+  font-size: 20px;
+  border-radius: 6px;
+  font-weight: 100;
+}
+
+.people .people-content .image-texts {
+  margin: 5px 5px 0px 10px;
   font-size: 18px;
   border-radius: 6px;
+  text-align: left;
+  font-weight: 100;
 }
 
 .featurette {
   padding: 20px;
+}
+
+.featurette .img-responsive {
+  margin: 0px auto;
+}
+
+.featurette .lead {
+  font-weight: 100;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -135,4 +155,18 @@ li {
   background-color:rgba(255,255,255,.7);
   border-radius: 4px;
   color: #daa520;
+}
+
+.page-header {
+	margin: 20px 0 20px;
+}
+
+.page-header > h1 {
+	padding-top: 20px;
+}
+
+.list-texts {
+	font-size: 21px;
+	font-weight: 100;
+	line-height: 1em;
 }
