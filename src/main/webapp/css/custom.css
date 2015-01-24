@@ -106,6 +106,12 @@ li {
   color: #ffffff;
 }
 
+.whitewash {
+  background-color: rgba(225, 225, 225, .5);
+  border-radius: 6px;
+  color: #ffffff;
+}
+
 .people {
   color: #ffffff;
   font-weight: 100;
