@@ -1,0 +1,62 @@
+.nav-justified {
+  background-color:rgba(0,0,0,0.6);
+  border-radius: 10px;
+  margin: 20px 0 20px 0;
+}
+
+.nav > li > a:hover {
+  background-color:rgba(0,0,0,0.2);
+}
+
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+  background-color: transparent;
+}
+
+.nav-justified > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #d3d3d3;
+  text-align: center;
+  /*box-shadow:*/
+    /*0 1px 2px #000000,*/
+    /*0 0px 0px #000000,*/
+    /*inset 0 -1px 1px rgba(0,0,0,0.5),*/
+    /*inset 0 0px 0px rgba(255,255,255,0.8);*/
+}
+
+.nav-justified > li:first-child > a {
+  border-radius: 10px 10px 0 0;
+}
+.nav-justified > li:last-child > a {
+  border-bottom: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+@media (min-width: 768px) {
+  .nav-justified > li:first-child > a {
+    border-left: 0;
+    border-radius: 10px 0 0 10px;
+  }
+  /*.nav-justified > li > a {*/
+    /*border-right: 1px solid #c0c0c0;*/
+    /*border-left: 1px solid #c0c0c0;*/
+  /*}*/
+  .nav-justified > li:last-child > a {
+    border-right: 0;
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
