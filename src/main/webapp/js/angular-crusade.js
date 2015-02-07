@@ -13,6 +13,7 @@ app.controller('CrusadeCtrl', ['$scope', '$sce', function($scope, $sce) {
         normal: '/img/shield.png',
         small: '/img/shield-sm.png'
       },
+      facebook: '/img/facebook/FB-f-Logo__blue_29.png',
      people: [
        {
          heading: 'Purpose',
@@ -115,7 +116,8 @@ app.controller('CrusadeCtrl', ['$scope', '$sce', function($scope, $sce) {
         	      header: 'Boat Support.',
         	      subheader: 'We got you.',
         	      text: 'There will be boat support on the course.  Should you require assistance simply wave your arms in the air until the support boat acknowledges it has seen you.',
-        	      image: '/img/shield.png'
+        	      image: '/img/shield.png',
+                imageOnTop: true
               },
               {
         	      header: 'Safety.',
@@ -127,7 +129,8 @@ app.controller('CrusadeCtrl', ['$scope', '$sce', function($scope, $sce) {
         	      header: 'Official Rules.',
         	      subheader: 'Coming soon.',
         	      text: 'Complete rules will be emailed to all registered racers. For an easy guide to right\'s of way, you can go to, http://www.mauikiteboardingassociation.com/kiteboarding_right-of-way_rules.html',
-        	      image: '/img/shield.png'
+        	      image: '/img/shield.png',
+                imageOnTop: true
               }                                  	   
                
                     ], 
