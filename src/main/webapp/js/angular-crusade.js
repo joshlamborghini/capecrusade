@@ -26,7 +26,7 @@ app.controller('CrusadeCtrl', ['$scope', '$sce', function($scope, $sce) {
          heading: '26 Miles 30 Teams',
          url: '/img/person1.jpg',
          texts: [
-           'Taking place on the beautiful beaches of Cape Cod'
+           'Taking place at Smuggler\'s Beach, South Yarmouth'
          ]
        },
        {
@@ -107,9 +107,9 @@ app.controller('CrusadeCtrl', ['$scope', '$sce', function($scope, $sce) {
    racedetails: [
                              
               {
-        	      header: 'The Course.',
+        	      header: 'Smuggler\'s Beach.',
         	      subheader: '26 miles total.',
-        	      text: 'The course will be simple and a detailed map is coming soon.  Each lap of the course will be approx. 2.5 miles and will be completed a total of 10 times in relay fashion to finish.',
+        	      text: 'Yarmouth, MA. The course will be simple and a detailed map is coming soon.  Each lap of the course will be approx. 2.5 miles and will be completed a total of 10 times in relay fashion to finish.',
         	      image: '/img/racedetails1.jpg'
               },
               {
@@ -142,13 +142,15 @@ app.controller('CrusadeCtrl', ['$scope', '$sce', function($scope, $sce) {
    	      image: '/img/group.jpg'
          },
          {
-          header: 'Registration Fundraising.',
-          subheader: '$1,000 per team.',
+          header: 'Registration.',
+          subheader: '2 ways to participate.',
           texts: [
-                  'Registration is free with your required minimum fundraising.',
-                  'See the suggested fundraisng tips below',
-                  'With 10 pledges of just $1 for every mile of the race, you\'re already done! It\'s that easy!',
-                  '$1,500 covers all expenses to send 1 survivor to these life changing camps. Your impact is real!'
+                  '#1 Fundraising a minimum $1,000/team and registration is FREE.',
+                  'You will receive a fundraising page to collect pledges from friends, family and coworkers',
+                  'Suggested fundraisng tips below.',
+                  'Prizes for top fundraising teams!',
+                  'With 10 pledges of just $1 for every mile of the race, you are already done! It\'s that easy!',
+                  '#2 Registration fee of $500/team'
                ],
           image: '/img/shield.png',
           imageOnTop: true
@@ -165,12 +167,6 @@ app.controller('CrusadeCtrl', ['$scope', '$sce', function($scope, $sce) {
            image: '/img/doucet.jpg'
          },
     
-         {
-	      header: '6 tips',
-	      subheader: 'to elevate your fundraising',
-	      text: 'With only 10 pledges of just $1 for every mile of the race, you\'re already done!#1 Start fundraising early. Timing is everything. We don\'t want people to just hit goals; we want them to exceed them! #2 Lose your inhibition to ask people for moneyYou\'re not asking for money, you\'re asking them to make an impact. Recognize this is truly a selfless act that will benefit others and be proud. Others will appreciate and respect your enthusiasm for the cause. #3 Find your personal connection You must have conviction about the work you\'re supportting and the people who benefit from it. Some have very direct links to the cause. #4 Craft a compelling message Your message has to be impactful and explain why you are raising money for Athletes 4 Cancer and why the charity deserves it. Let the strength of your story draw the appropriate donations. And remember to ask them to forward the request on to others who may support the cause.#5 Leverage social media Tell your story on Facebook and Twitter. People will "like" and retweet your story to others who may donate. #6 Send a personalized thank-you note to every contributo Make sure that everyone who makes a donation receives a personal word of thanks from you. Use a photo from the event in your thank-you!',
-	      image: '/img/shield.jpg'
-         },
          {
              header: '6 tips',
              subheader: 'to evelvate your fundraising.',

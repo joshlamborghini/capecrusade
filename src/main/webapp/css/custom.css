@@ -57,6 +57,12 @@ h1 {
   color: #ffffff;
 }
 
+.whitewash {
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 6px;
+  color: #000000;
+}
+
 .people {
   color: #ffffff;
   font-weight: 100;
