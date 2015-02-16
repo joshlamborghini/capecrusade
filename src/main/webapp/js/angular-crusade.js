@@ -74,12 +74,6 @@ app.controller('CrusadeCtrl', ['$scope', '$sce', function($scope, $sce) {
     ],
     featurettes: [
        {
-	      header: 'Athletes 4 Cancer.',
-	      subheader: 'Rebuilding lives.',
-	      text: 'A4C uses adventure-based experiences such as surfing as a channel of healing, achievement and life-renewal. Their programs help patients not just survive, but thrive in all aspects of life. Learn more about their amazing work <a href="http://www.athletes4cancer.org">here.</a>',
-	      image: '/img/a4csurf.jpg'
-       },
-       {
            header: 'Our commitment.',
            subheader: 'Superhuman.',
            text: 'Our logo represents our commitment to fight for what we believe in. It combines the ocean, always full of uncertainty and joy, with a shield to protect us from opposition; and when spun among the waters we ride, a cape to remind us of the superhuman strength it takes for those dealing with cancer.',
